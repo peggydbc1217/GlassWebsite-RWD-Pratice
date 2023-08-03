@@ -1,0 +1,26 @@
+.pagination {
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 29px;
+    padding: 12px;
+    color: black;
+    border: 1px solid #f2f2f2;
+
+    @include respond(tab) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @include respond(phone) {
+      font-size: 12px;
+      line-height: 26px;
+    }
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

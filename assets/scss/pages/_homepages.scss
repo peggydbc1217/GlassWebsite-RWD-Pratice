@@ -17,10 +17,10 @@
 .features__item {
   width: 23%;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     width: 48%;
   }
-  @media (max-width: 767px) {
+  @include respond(phone) {
     width: 100%;
   }
 }
@@ -40,10 +40,10 @@
 /* CLASSIC */
 
 .classic {
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     padding: 0 36px;
   }
-  @media (max-width: 767px) {
+  @include respond(phone) {
     padding: 0 13px;
   }
 }
@@ -54,7 +54,7 @@
   gap: 24px;
   margin-bottom: 80px;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,10 +63,10 @@
 
 .classic__item {
   width: 32%;
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     width: 50%;
   }
-  @media (max-width: 767px) {
+  @include respond(phone) {
     width: 100%;
   }
 }
@@ -75,14 +75,15 @@
 
 .cobranding {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+
   background-size: cover;
   padding: 80px 0;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     padding: 80px 36px;
   }
 
-  @media (max-width: 767px) {
+  @include respond(phone) {
     padding: 80px 13px;
   }
 }
@@ -98,7 +99,7 @@
   align-items: flex-start;
   list-style: none;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     flex-direction: column;
     align-items: center;
     /* padding: 0 36px; */
@@ -108,7 +109,7 @@
 .cobranding__item {
   width: 50%;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     width: 100%;
     margin-bottom: 24px;
   }
@@ -126,11 +127,11 @@
 /* RECOMMEND */
 
 .recommend {
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     padding: 0 36px;
   }
 
-  @media (max-width: 767px) {
+  @include respond(phone) {
     padding: 0 13px;
   }
 }
@@ -142,7 +143,7 @@
   gap: 24px;
   margin-top: 48px;
 
-  @media (max-width: 767px) {
+  @include respond(phone) {
     margin-top: 24px;
   }
 }
@@ -154,7 +155,8 @@
   @media (max-width: 1630px) {
     width: 48%;
   }
-  @media (max-width: 767px) {
+
+  @include respond(tab) {
     width: 100%;
   }
 }
@@ -185,7 +187,7 @@
   background-color: #fbf2f2;
   padding: 80px 0px;
 
-  @media (max-width: 767px) {
+  @include respond(tab) {
     padding: 40px 13px;
   }
 }
@@ -201,7 +203,7 @@
   margin-top: 48px;
   margin-bottom: 24px;
 
-  @media (max-width: 767px) {
+  @include respond(tab) {
     font-size: 16px;
     line-height: 24px;
     margin-top: 24px;
@@ -291,7 +293,8 @@
 .button__container {
   text-align: center;
   margin-top: 48px;
-  @media (max-width: 767px) {
+
+  @include respond(tab) {
     margin-top: 24px;
   }
 }
@@ -307,7 +310,7 @@
   cursor: pointer;
   margin: 0 auto;
 
-  @media (max-width: 767px) {
+  @include respond(tab) {
     padding: 16px 0px;
     width: 100%;
   }

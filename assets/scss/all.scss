@@ -3,14 +3,16 @@
 
 @import "./abstracts/helper";
 @import "./abstracts/variables";
+@import "./abstracts/flex";
+@import "./abstracts/mixins";
 
 //base
 @import "./base/base";
 @import "./base/typography";
-@import "./base/utilities";
 
 //components
 @import "./components/container";
+@import "./components/pagination";
 
 //layout
 @import "./layout/navigation";
@@ -19,3 +21,5 @@
 
 //pages
 @import "./pages/homepages";
+@import "./pages/series";
+@import "./pages/store";

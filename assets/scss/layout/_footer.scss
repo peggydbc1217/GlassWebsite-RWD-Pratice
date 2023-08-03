@@ -3,17 +3,17 @@
 .footer {
   background-color: #aa0601;
 
-  @media (max-width: 1296px) {
+  @include respond(tab) {
     padding: 0 36px;
   }
 
-  @media (max-width: 767px) {
+  @include respond(phone) {
     padding: 0 13px;
   }
 
   &__container {
     padding: 60px 0px 32px 0px;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       padding: 24px 0px;
     }
   }
@@ -32,7 +32,7 @@
     gap: 48px;
     margin-bottom: 36px;
 
-    @media (max-width: 767px) {
+    @include respond(phone) {
       display: none;
     }
   }
@@ -51,7 +51,7 @@
 
   &__info {
     padding-bottom: 32px;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       padding-bottom: 28px;
     }
   }
@@ -65,7 +65,7 @@
     margin-right: 12px;
     margin-left: 0;
     color: white;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       height: 18px;
       margin-right: 11px;
     }
@@ -75,7 +75,7 @@
     height: 40px;
     margin-right: 20px;
     margin-left: 0;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       height: 16px;
       margin-right: 11px;
     }
@@ -85,7 +85,7 @@
     font-size: 36px;
     line-height: 54px;
     color: white;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       font-size: 16px;
       line-height: 24px;
     }
@@ -95,14 +95,20 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       gap: 8px;
     }
   }
 
   &__upper-right__icon {
     height: 48px;
-    @media (max-width: 767px) {
+
+    &:hover,
+    &:active {
+      color: #650300;
+    }
+
+    @include respond(phone) {
       height: 24px;
     }
   }
@@ -113,7 +119,7 @@
     align-items: center;
     padding-top: 32px;
 
-    @media (max-width: 767px) {
+    @include respond(phone) {
       display: block;
       gap: 8px;
       padding-top: 16px;
@@ -127,7 +133,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 48px;
-      @media (max-width: 767px) {
+      @include respond(phone) {
         display: block;
         gap: 8px;
       }
@@ -139,7 +145,7 @@
     text-align: right;
     color: #fff;
     line-height: 24px;
-    @media (max-width: 767px) {
+    @include respond(phone) {
       text-align: left;
     }
     &__link:hover,

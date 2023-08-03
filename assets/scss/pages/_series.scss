@@ -1,0 +1,111 @@
+.products {
+  &__navbar {
+    @include respond(tab) {
+      padding: 16px 0px;
+      width: 100%;
+    }
+  }
+
+  &__navbar__list {
+    flex-wrap: wrap;
+  }
+
+  &__navbar__item {
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    width: 33%;
+    &:hover {
+      border-bottom: 8px solid #aa0601;
+    }
+
+    @include respond(phone) {
+      width: 32.5%;
+    }
+  }
+
+  // POHOTO
+
+  &__photobox {
+    max-width: 100%;
+
+    &--1 {
+      height: 296px;
+      width: 50%;
+      background-image: url("../../../assets/images/product-header-1.png");
+      background-size: cover;
+      background-position: center;
+      @media (max-width: 991px) {
+        background-image: url("../../../assets/images/product-header-sm-1.png");
+      }
+
+      @include respond(phone) {
+        height: 136px;
+      }
+    }
+    &--2 {
+      width: 50%;
+      height: 296px;
+      background-image: url("../../../assets/images/product-header-2.png");
+      background-size: cover;
+      background-position: center;
+
+      @media (max-width: 991px) {
+        background-image: url("../../../assets/images/product-header-sm-2.png");
+      }
+
+      @include respond(phone) {
+        height: 136px;
+      }
+    }
+  }
+
+  // PRODUCT DISPLAY
+  &__display {
+    padding: 80px 0;
+
+    @include respond(phone) {
+      padding: 40px 14px;
+    }
+  }
+
+  &__display__list {
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include respond(phone) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__display__item {
+    width: 23%;
+    margin-bottom: 80px;
+
+    @include respond(tab) {
+      width: 48%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__colorbox {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__color-1 {
+    display: block;
+    background-color: #5f3e2d;
+    height: 24px;
+    width: 24px;
+  }
+  &__color-2 {
+    display: block;
+    background-color: #b75929;
+    height: 24px;
+    width: 24px;
+  }
+}

@@ -4,7 +4,8 @@
   font-weight: 800;
   color: #650300;
   text-align: center;
-  @media (max-width: 767px) {
+
+  @include respond(phone) {
     font-size: 24px;
     line-height: 36px;
   }
@@ -16,8 +17,72 @@
   color: #aa0601;
   text-align: center;
   text-transform: uppercase;
-  @media (max-width: 367px) {
+  @include respond(phone) {
     font-size: 36px;
     line-height: 48px;
   }
+}
+
+.title--link {
+  display: block;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 24px 0px;
+
+  @include respond(phone) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 0px;
+  }
+}
+
+.title--h5-Roboto {
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+}
+
+.title--h5 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.title--h6 {
+  font-size: 24px;
+  line-height: 36px;
+
+  @include respond(phone) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.title--h7 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+}
+
+.Roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+}
+
+.text-color-primary {
+  color: #aa0601;
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: 30px;
 }
